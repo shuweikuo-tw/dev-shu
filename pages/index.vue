@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Header />
     <section id="home" class="hero">
       <h1>I'm a Web Developer</h1>
       <p><kbd>Cmd</kbd> + <kbd>C</kbd> and <kbd>Cmd</kbd> + <kbd>V</kbd></p>
@@ -20,20 +19,15 @@
       <h2>Contact</h2>
       <ContactForm />
     </section>
-    <Footer />
   </div>
 </template>
 
 <script>
-import AppHeader from '~/components/App/AppHeader.vue';
 import ContactForm from '~/components/ContactForm.vue';
-import AppFooter from '~/components/App/AppFooter.vue';
 
 export default {
   components: {
-    AppHeader,
-    ContactForm,
-    AppFooter
+    ContactForm
   },
   data() {
     return {
